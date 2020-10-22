@@ -1,0 +1,41 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Samira",
+      "Age": 33,
+      "city": "Torronto",
+      "age": 20
+    },
+    {
+      "id": "3",
+      "name": "Adam",
+      "age": 17,
+      "city": "London"
+    },
+    {
+      "id": "BOwl-Rb",
+      "name": "Khaled",
+      "age": 20,
+      "city": "Cairo"
+    },
+    {
+      "name": "Mahmoud",
+      "age": 40,
+      "city": "Dubai",
+      "id": "p0Ay_mE"
+    },
+    {
+      "name": "Hagar",
+      "age": 23,
+      "city": "Paris",
+      "id": "oJlIT-h"
+    },
+    {
+      "id": "h1mR_r6",
+      "name": "Medhat",
+      "age": 36,
+      "city": "Aswan"
+    }
+  ]
+}

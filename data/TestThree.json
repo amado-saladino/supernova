@@ -1,0 +1,14 @@
+{
+"testThree_two": [
+    {
+      "name": "Ahmed",
+      "email": "ahmed@mail.com",
+      "password": "password4578"
+    },
+    {
+      "name": "Islam",
+      "email": "islam@mail.net",
+      "password": "password1234"
+    }
+  ]
+ }
