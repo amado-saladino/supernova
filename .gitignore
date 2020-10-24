@@ -8,3 +8,7 @@ build/
 .idea
 gradle
 *.log
+
+# keep screenshots
+screenshots
+!.gitkeep
