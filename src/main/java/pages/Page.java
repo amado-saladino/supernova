@@ -4,7 +4,9 @@ import helpers.FileReader;
 import helpers.WaitUtils;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -20,6 +22,18 @@ public abstract class Page {
         PageFactory.initElements(driver, this);
         jsRunner = (JavascriptExecutor) driver;
         wait = new WaitUtils();
+    }
+
+    public void selectDropdownItem(WebElement comboElement, String option) {
+        new Select(comboElement).selectByVisibleText(option);
+    }
+
+    public void selectDropdownItem(WebElement comboElement, int index) {
+        new Select(comboElement).selectByIndex(index);
+    }
+
+    public WebElement getSelectedDropdownItem(WebElement comboBox) {
+        return new Select(comboBox).getFirstSelectedOption();
     }
 
     protected <T> T runScript(String script,Object... args) {
