@@ -9,8 +9,6 @@ import io.codearte.jfairy.producer.person.PersonProperties;
 
 public class Faker {
     Fairy fairy;
-    LocalDate localDate;
-    String day, month, year;
 
     public Faker() {
         fairy = Fairy.create();
@@ -22,13 +20,6 @@ public class Faker {
 
     public String getFemaleFirstName() {
         return fairy.person(PersonProperties.female()).getFirstName();
-    }
-
-    public void generateLocalDate() {
-        localDate = fairy.person(PersonProperties.withAge(30)).getDateOfBirth().toLocalDate();
-        day = String.valueOf(localDate.getDayOfMonth());
-        month = getMonthName(localDate.getMonthOfYear());
-        year = String.valueOf(localDate.getYear());
     }
 
     private String getMonthName(int monthNumber) {
@@ -81,20 +72,37 @@ public class Faker {
         return fairy.person().getAddress().getAddressLine1();
     }
 
-    public String getYear() {
-        return year;
-    }
-
-    public String getMonth() {
-        return month;
-    }
-
-    public String getDayOfMonth() {
-        return day;
-    }
-
     public String getRandomMessage() {
-
         return fairy.textProducer().sentence();
+    }
+
+    public RandomDate getRandomDate() {
+        return new RandomDate();
+    }
+
+    public class RandomDate {
+        private LocalDate localDate;
+        private String day;
+        private String month;
+        private String year;
+
+        RandomDate() {
+            localDate = fairy.person(PersonProperties.withAge(30)).getDateOfBirth().toLocalDate();
+            this.day = String.valueOf(localDate.getDayOfMonth());
+            this.month = getMonthName(localDate.getMonthOfYear());
+            this.year = String.valueOf(localDate.getYear());
+        }
+
+        public String day() {
+            return day;
+        }
+
+        public String month() {
+            return month;
+        }
+
+        public String year() {
+            return year;
+        }
     }
 }

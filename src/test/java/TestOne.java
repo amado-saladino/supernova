@@ -1,7 +1,6 @@
+import helpers.Faker;
 import org.testng.annotations.Test;
 import pages.PageOne;
-
-import java.io.IOException;
 
 public class TestOne extends TestCase {
     @Test
@@ -26,5 +25,17 @@ public class TestOne extends TestCase {
     void testOne_three() {
         PageOne pg1 = new PageOne(driver);
         pg1.findSearchByjQuery();
+    }
+
+    @Test
+    void testOne_four() {
+        Faker faker = new Faker();
+        String day = faker.getRandomDate().day();
+        String month = faker.getRandomDate().month();
+        String year = faker.getRandomDate().year();
+
+        System.out.printf("Random day: %s%n",day);
+        System.out.printf("Random month: %s%n",month);
+        System.out.printf("Random year: %s%n",year);
     }
 }
