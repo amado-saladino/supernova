@@ -17,7 +17,9 @@ public class TestOne extends TestCase {
     @Test
     void testOne_two() {
         PageOne pg1 = new PageOne(driver);
-        driver.get("https://2886795347-80-frugo04.environments.katacoda.com/");
+        String path = System.getProperty("user.dir") + "/nginx-deploy/colors.html";
+        //driver.get("https://2886795347-80-frugo04.environments.katacoda.com/");
+        driver.get(path);
         pg1.waitForColors();
     }
 
@@ -29,6 +31,7 @@ public class TestOne extends TestCase {
 
     @Test
     void testOne_four() {
+        System.out.printf("driver is null? %s%n", driver == null);
         Faker faker = new Faker();
         String day = faker.getRandomDate().day();
         String month = faker.getRandomDate().month();

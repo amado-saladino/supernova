@@ -1,7 +1,6 @@
 package helpers;
 
 import com.google.common.base.Function;
-import org.checkerframework.checker.nullness.qual.Nullable;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -12,13 +11,12 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
 public class WaitUtils {
     private WebDriver driver;
 
     public WaitUtils() {
-        this.driver = WebDriverFactory.getDriver();
+        this.driver = Browser.getDriver();
     }
 
     public WebElement waitVisibilityOf(By by, int timeout) {

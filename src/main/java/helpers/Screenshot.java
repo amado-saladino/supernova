@@ -14,7 +14,7 @@ import java.util.Calendar;
 import java.util.Random;
 
 public class Screenshot {
-    static WebDriver driver = WebDriverFactory.getDriver();
+    static WebDriver driver = Browser.getDriver();
     private static Random random = new Random();
 
     public static void takeScreenshot(String imageFile) {

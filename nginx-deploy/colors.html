@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script>
+var timer1 = setInterval(dynamicColor, 2000);
+var timer2 = 0;
+function dynamicColor() {
+	document.getElementById("dynamicColor").style.color="yellow";
+	clearInterval(timer1);
+	timer2 = setInterval(dynamicText, 2000);
+} 
+var counter1 = 0;
+function dynamicText() {
+	var mydiv = document.getElementById("dynamicText");
+	var newElement = document.createElement('a');
+	newElement.setAttribute('href',"http://www.goole.com/");
+	newElement.setAttribute('id', "target");
+	newElement.innerHTML = "dynamicText" + counter1;
+	mydiv.appendChild(newElement);
+	if(counter1 > 5) {
+		clearInterval(timer2);
+	}
+	counter1 = counter1 + 1;
+}
+</script>
+    </head>
+    <body>
+        <h1>Webdriver Commands Example.</h1>
+        <p id="dynamicText"></p>
+        <p>
+            <button id="dynamicColor" style="color: white;">Dynamic Color</button>
+        </p>
+    </body>
+</html>
