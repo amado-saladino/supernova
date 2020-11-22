@@ -1,7 +1,7 @@
 import helpers.ExcelReader;
 import helpers.JsonReader;
 import helpers.PropertyReader;
-import helpers.WebDriverFactory;
+import helpers.Browser;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestNGMethod;
 import org.testng.annotations.AfterSuite;
@@ -16,7 +16,7 @@ public class TestCase {
 
     @BeforeSuite
     void setupTest() {
-        driver = WebDriverFactory.getDriver();
+        driver = Browser.getDriver();
         //driver.manage().window().fullscreen();
         driver.navigate().to(PropertyReader.getProperty("BASE_URL"));
     }
@@ -57,6 +57,6 @@ public class TestCase {
 
     @AfterSuite
     void teardownTest() {
-        WebDriverFactory.stopDriver();
+        Browser.stopDriver();
     }
 }

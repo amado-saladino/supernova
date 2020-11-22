@@ -1,7 +1,6 @@
 package pages;
 
 import com.google.common.base.Function;
-import org.checkerframework.checker.nullness.qual.Nullable;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -26,6 +25,9 @@ public class PageOne extends Page {
         items.forEach(item -> System.out.println(item.getText()));
     }
 
+    /**
+     * https://www.techbeamers.com/webdriver-fluent-wait-command-examples/
+     */
     public void waitForColors() {
         /*Function<WebDriver,Boolean> function = new Function<WebDriver, Boolean>() {
             public Boolean apply(WebDriver arg0) {
@@ -56,6 +58,6 @@ public class PageOne extends Page {
 
     public void findSearchByjQuery() {
         String srch = runScript("return $('#small-searchterms').attr('placeholder')");
-        System.out.printf("Placeholder: %s%n",srch);
+        System.out.printf("Placeholder: %s%n", srch);
     }
 }
