@@ -1,3 +1,4 @@
+import helpers.Screenshot;
 import org.testng.annotations.Test;
 import pages.PageOne;
 
@@ -10,6 +11,7 @@ public class TestThree extends TestCase {
         PageOne pg1 = new PageOne(driver);
         pg1.getElement();
         pg1.getTopMenu();
+        Screenshot.takeScreenshot("page-elements");
     }
 
     @Test(dataProvider = "jsonDetails")

@@ -12,25 +12,23 @@ import java.util.Map;
 import java.util.function.Supplier;
 
 public class BrowserFactory {
-    final static Map<String, Supplier<WebDriver>> map = new HashMap<>();
-    static {
-        map.put("CHROME", ()->new ChromeDriver(chromeOptions(false)));
-        map.put("CHROME-HEADLESS", ()-> {
-            return new ChromeDriver(chromeOptions(true));
-        });
-        map.put("FIREFOX",()->new FirefoxDriver(firefoxOptions(false)));
-        map.put("FIREFOX-HEADLESS",()->new FirefoxDriver(firefoxOptions(true)));
+    private final Map<String, Supplier<WebDriver>> map = new HashMap<>();
+
+    private Supplier<WebDriver> getBrowser(String browser, boolean headless) {
+        map.put("chrome", ()->new ChromeDriver(chromeOptions(headless)));
+        map.put("firefox",()->new FirefoxDriver(firefoxOptions(headless)));
+        return map.get(browser);
     }
 
-    public WebDriver createBrowserSession(String browser) {
-        Supplier<WebDriver> driver = map.get(browser.toUpperCase());
+    public WebDriver createBrowserSession(String browser, boolean headless) {
+        Supplier<WebDriver> driver = getBrowser(browser, headless);
         if (driver !=null) {
             return driver.get();
         }
         throw new IllegalArgumentException("No Such browser found: " + browser.toUpperCase());
     }
 
-    private static ChromeOptions chromeOptions(boolean headless) {
+    private ChromeOptions chromeOptions(boolean headless) {
         System.setProperty("webdriver.chrome.driver", PropertyReader.getProperty("chromedriver-path"));
         ChromeOptions options = new ChromeOptions();
         HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
@@ -49,7 +47,7 @@ public class BrowserFactory {
         return options;
     }
 
-    private static FirefoxOptions firefoxOptions(boolean headless) {
+    private FirefoxOptions firefoxOptions(boolean headless) {
         System.setProperty("webdriver.gecko.driver", PropertyReader.getProperty("geckodriver-path"));
         FirefoxOptions options = new FirefoxOptions();
         //option.addPreference("browser.download.folderList", 2);

@@ -1,5 +1,6 @@
 package helpers;
 
+import org.openqa.selenium.SessionNotCreatedException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -15,17 +16,23 @@ public abstract class Browser {
     private static WebDriver driver = null;
     private static BrowserFactory browserFactory = new BrowserFactory();
 
-    public static WebDriver getDriver() {
-        String browser = PropertyReader.getProperty("browser");
-
+    public static WebDriver createDriver(String browserType, boolean headless) {
         if (driver == null) {
-            driver = browserFactory.createBrowserSession(browser);
+            driver = browserFactory.createBrowserSession(browserType, headless);
+
+            driver.manage().timeouts().implicitlyWait(
+                    Long.parseLong(PropertyReader.getProperty("default-wait")), SECONDS);
+            driver.manage().timeouts().pageLoadTimeout(100, SECONDS);
+            driver.manage().timeouts().setScriptTimeout(100, SECONDS);
+            driver.manage().window().maximize();
         }
-        driver.manage().timeouts().implicitlyWait(
-                Long.parseLong(PropertyReader.getProperty("default-wait")), SECONDS);
-        driver.manage().timeouts().pageLoadTimeout(100, SECONDS);
-        driver.manage().timeouts().setScriptTimeout(100,SECONDS);
-        driver.manage().window().maximize();
+        return driver;
+    }
+
+    public static WebDriver getCurrentDriver() {
+        if (driver == null) {
+            throw new SessionNotCreatedException("Driver not started. Please make sure that you have a running driver instance\nYou might have not called 'Browser.createDriver()' method");
+        }
         return driver;
     }
 

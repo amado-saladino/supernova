@@ -3,6 +3,7 @@ import helpers.JsonReader;
 import helpers.PropertyReader;
 import helpers.Browser;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.BrowserType;
 import org.testng.ITestNGMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -16,7 +17,7 @@ public class TestCase {
 
     @BeforeSuite
     void setupTest() {
-        driver = Browser.getDriver();
+        driver = Browser.createDriver(BrowserType.CHROME, true);
         //driver.manage().window().fullscreen();
         driver.navigate().to(PropertyReader.getProperty("BASE_URL"));
     }

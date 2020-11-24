@@ -1,4 +1,5 @@
 import helpers.Faker;
+import helpers.Screenshot;
 import org.testng.annotations.Test;
 import pages.PageOne;
 
@@ -21,6 +22,7 @@ public class TestOne extends TestCase {
         //driver.get("https://2886795347-80-frugo04.environments.katacoda.com/");
         driver.get(path);
         pg1.waitForColors();
+        Screenshot.takeScreenshot("colors");
     }
 
     @Test
