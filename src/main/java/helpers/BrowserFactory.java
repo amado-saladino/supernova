@@ -9,26 +9,26 @@ import org.openqa.selenium.remote.CapabilityType;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.function.Function;
 import java.util.function.Supplier;
 
 public class BrowserFactory {
-    private final Map<String, Supplier<WebDriver>> map = new HashMap<>();
+    private final static Map<String, Function<Boolean,WebDriver>> map = new HashMap<>();
 
-    private Supplier<WebDriver> getBrowser(String browser, boolean headless) {
-        map.put("chrome", ()->new ChromeDriver(chromeOptions(headless)));
-        map.put("firefox",()->new FirefoxDriver(firefoxOptions(headless)));
-        return map.get(browser);
+    static {
+        map.put("chrome",(h)->new ChromeDriver(chromeOptions(h)));
+        map.put("firefox",(h)->new FirefoxDriver(firefoxOptions(h)));
     }
 
     public WebDriver createBrowserSession(String browser, boolean headless) {
-        Supplier<WebDriver> driver = getBrowser(browser, headless);
-        if (driver !=null) {
-            return driver.get();
+        Function<Boolean,WebDriver> fn = map.get(browser);
+        if (fn !=null) {
+            return fn.apply(headless);
         }
         throw new IllegalArgumentException("No Such browser found: " + browser.toUpperCase());
     }
 
-    private ChromeOptions chromeOptions(boolean headless) {
+    private static ChromeOptions chromeOptions(boolean headless) {
         System.setProperty("webdriver.chrome.driver", PropertyReader.getProperty("chromedriver-path"));
         ChromeOptions options = new ChromeOptions();
         HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
@@ -47,7 +47,7 @@ public class BrowserFactory {
         return options;
     }
 
-    private FirefoxOptions firefoxOptions(boolean headless) {
+    private static FirefoxOptions firefoxOptions(boolean headless) {
         System.setProperty("webdriver.gecko.driver", PropertyReader.getProperty("geckodriver-path"));
         FirefoxOptions options = new FirefoxOptions();
         //option.addPreference("browser.download.folderList", 2);
