@@ -4,24 +4,29 @@ import com.google.common.base.Function;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
 public class PageOne extends Page {
+    @FindBy(css="a.ico-register")
+    private WebElement linkReg;
+
+    @FindBy(css = "ul.top-menu")
+    private WebElement menuTop;
+
     public PageOne(WebDriver driver) {
         super(driver);
         injectScriptFile("jquery.js");
     }
 
     public void getElement() {
-        WebElement regLink = driver.findElement(By.cssSelector("a.ico-register"));
-        String t = runScript("return arguments[0].text", regLink);
+        String t = runScript("return arguments[0].text", linkReg);
         System.out.printf("Text of the link: %s%n", t);
     }
 
     public void getTopMenu() {
-        WebElement top = driver.findElement(By.cssSelector("ul.top-menu"));
-        List<WebElement> items = runScript("return arguments[0].querySelectorAll('li')", top);
+        List<WebElement> items = runScript("return arguments[0].querySelectorAll('li')", menuTop);
         items.forEach(item -> System.out.println(item.getText()));
     }
 
