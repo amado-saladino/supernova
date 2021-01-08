@@ -8,9 +8,11 @@ import org.testng.annotations.Test;
 import helpers.FileReader;
 import helpers.RestUtils;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class Test1 {
     private RestUtils requests;
@@ -25,7 +27,6 @@ public class Test1 {
     public void test_get_users() {
         Map params = new HashMap();
         params.put("per_page", 20);
-
         Response res = requests.sendWithQueryParams("api/users","",Method.GET,params);
 
         System.out.println(res.body().asString());
@@ -49,8 +50,9 @@ public class Test1 {
         System.out.println(user_txt);
 
         System.out.println("---");
-        User user = requests.deserializeString(user_txt, User.class);
-        System.out.printf("user id: %s%nname: %s%n",user.getId(),user.getName());
+        User.UserBuilder userBuilder = requests.deserializeString(user_txt, User.UserBuilder.class);
+        User user = userBuilder.build();
+        System.out.println(user.toString());
     }
 
     @Test
@@ -84,7 +86,7 @@ public class Test1 {
 
     @Test
     void test_post_user() {
-        User user = new User("","Arabi",22, "Cairo");
+        User user = new User.UserBuilder("Arabi", 22).setCity("Cairo").build();
         Response res = requests.send("users",user, Method.POST);
         System.out.println(res.body().asString());
     }
@@ -93,15 +95,20 @@ public class Test1 {
     void test_post_method_body() {
         String payload = "{\"name\":\"Hagar\",\"age\":23,\"city\": \"Paris\"}";
         Response res = requests.send("users",payload, Method.POST);
-        User user = requests.deserializePath(res,"",User.class);
+        User.UserBuilder userBuilder = requests.deserializePath(res,"", User.UserBuilder.class);
+        User user = userBuilder.build();
         System.out.println(res.body().asString());
-        System.out.printf("User added with id: %s%n", user.getId());
+        System.out.printf("User added with id: %s%n", user.toString());
     }
 
     @Test
     void test_get_method_no_body() {
-        Response res = requests.send("api/users","",Method.GET);
+        Response res = requests.send("users","",Method.GET);
         System.out.println(res.body().asString());
+
+        User.UserBuilder[] userBuilder= requests.deserializeString(res.body().asString(), User.UserBuilder[].class);
+        List<User> users = Arrays.stream(userBuilder).map(x->x.build()).collect(Collectors.toList());
+        users.forEach(x-> System.out.println(x.toString()));
     }
 
     @Test
@@ -115,7 +122,7 @@ public class Test1 {
 
     @Test
     void test_put_user_object() {
-        User user = new User("4", "Adam", 17, "London");
+        User user = new User.UserBuilder("Adam",17).setCity("London").build();
         Response res = requests.send("users/{id}",user,Method.PUT,3);
         res.prettyPrint();
     }

@@ -18,24 +18,6 @@
       "name": "Khaled",
       "age": 20,
       "city": "Cairo"
-    },
-    {
-      "name": "Mahmoud",
-      "age": 40,
-      "city": "Dubai",
-      "id": "p0Ay_mE"
-    },
-    {
-      "name": "Hagar",
-      "age": 23,
-      "city": "Paris",
-      "id": "oJlIT-h"
-    },
-    {
-      "id": "h1mR_r6",
-      "name": "Medhat",
-      "age": 36,
-      "city": "Aswan"
     }
   ]
 }
