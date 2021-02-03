@@ -17,8 +17,9 @@ public class Screenshot {
     static WebDriver driver = Browser.getCurrentDriver();
     private static Random random = new Random();
 
-    public static void takeScreenshot(String imageFile) {
-        Path path = Paths.get("screenshots",imageFile+ createDateTimeStamp() +".png");
+    public static String takeScreenshot(String imageFile) {
+        String fingerprint = createDateTimeStamp();
+        Path path = Paths.get("screenshots",imageFile+ fingerprint +".png");
         try {
             Files.createDirectories((path.getParent()));
             FileOutputStream fileOutputStream = new FileOutputStream(path.toString());
@@ -27,6 +28,7 @@ public class Screenshot {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        return imageFile+ fingerprint +".png";
     }
 
     private static String createDateTimeStamp() {

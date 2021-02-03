@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+	<listeners>
+		<listener class-name="logger.Listener" />
+	</listeners>
+
+	<test name="Chrome Test">
+		<classes>
+			<class name="Test4" />
+		</classes>
+	</test>
+</suite>

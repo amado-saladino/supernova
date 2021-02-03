@@ -30,9 +30,6 @@ public abstract class Browser {
     }
 
     public static WebDriver getCurrentDriver() {
-        if (driver == null) {
-            throw new SessionNotCreatedException("Driver not started. Please make sure that you have a running driver instance\nYou might have not called 'Browser.createDriver()' method");
-        }
         return driver;
     }
 

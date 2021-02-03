@@ -1,5 +1,6 @@
 import helpers.Faker;
 import helpers.Screenshot;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.PageOne;
 

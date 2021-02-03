@@ -1,7 +1,7 @@
+import helpers.Browser;
 import helpers.ExcelReader;
 import helpers.JsonReader;
 import helpers.PropertyReader;
-import helpers.Browser;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.BrowserType;
 import org.testng.ITestNGMethod;
