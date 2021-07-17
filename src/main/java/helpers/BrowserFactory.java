@@ -11,7 +11,6 @@ import org.openqa.selenium.remote.CapabilityType;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Function;
-import java.util.function.Supplier;
 
 public class BrowserFactory {
     private final static Map<String, Function<Boolean,WebDriver>> map = new HashMap<>();
