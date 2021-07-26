@@ -1,5 +1,6 @@
 package helpers;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -16,8 +17,14 @@ public class BrowserFactory {
     private final static Map<String, Function<Boolean,WebDriver>> map = new HashMap<>();
 
     static {
-        map.put(BrowserType.CHROME,(h)->new ChromeDriver(chromeOptions(h)));
-        map.put(BrowserType.FIREFOX,(h)->new FirefoxDriver(firefoxOptions(h)));
+        map.put(BrowserType.CHROME,(h)-> {
+            WebDriverManager.chromedriver().setup();
+            return new ChromeDriver(chromeOptions(h));
+        });
+        map.put(BrowserType.FIREFOX,(h)-> {
+            WebDriverManager.firefoxdriver().setup();
+            return new FirefoxDriver(firefoxOptions(h));
+        } );
     }
 
     public WebDriver createBrowserSession(String browser, boolean headless) {
@@ -29,7 +36,6 @@ public class BrowserFactory {
     }
 
     private static ChromeOptions chromeOptions(boolean headless) {
-        System.setProperty("webdriver.chrome.driver", PropertyReader.getProperty("chromedriver-path"));
         ChromeOptions options = new ChromeOptions();
         HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
         chromePrefs.put("profile.default.content_settings.popups", 0);
@@ -48,7 +54,6 @@ public class BrowserFactory {
     }
 
     private static FirefoxOptions firefoxOptions(boolean headless) {
-        System.setProperty("webdriver.gecko.driver", PropertyReader.getProperty("geckodriver-path"));
         FirefoxOptions options = new FirefoxOptions();
         //option.addPreference("browser.download.folderList", 2);
         //option.addPreference("browser.helperApps.neverAsk.saveToDisk", "application/pdf");
