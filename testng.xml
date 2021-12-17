@@ -1,12 +1,14 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Regression Suite">
 	<listeners>
-		<listener class-name="logger.Listener" />
+<!--		<listener class-name="logger.Listener" />-->
 	</listeners>
 
 	<test name="Chrome Test">
 		<classes>
-			<class name="Test4" />
+			<class name="TestJson" />
+			<class name="TestYaml" />
+			<class name="XelTest" />
 		</classes>
 	</test>
 </suite>

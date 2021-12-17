@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.Browser;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.CapabilityType;
 
@@ -17,11 +18,11 @@ public class BrowserFactory {
     private final static Map<String, Function<Boolean,WebDriver>> map = new HashMap<>();
 
     static {
-        map.put(BrowserType.CHROME,(h)-> {
+        map.put(Browser.CHROME.browserName(),(h)-> {
             WebDriverManager.chromedriver().setup();
             return new ChromeDriver(chromeOptions(h));
         });
-        map.put(BrowserType.FIREFOX,(h)-> {
+        map.put(Browser.FIREFOX.browserName(), (h)-> {
             WebDriverManager.firefoxdriver().setup();
             return new FirefoxDriver(firefoxOptions(h));
         } );

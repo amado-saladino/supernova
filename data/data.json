@@ -1,0 +1,22 @@
+{
+"users": [
+    {
+      "name": "Ahmed",
+      "email": "ahmed@mail.com",
+      "password": "password4578",
+      "address": {
+        "city": "Cairo",
+        "country": "Egypt"
+      }
+    },
+    {
+      "name": "Islam",
+      "email": "islam@mail.net",
+      "password": "password1234",
+      "address": {
+        "city": "Berlin",
+        "country": "Germany"
+      }
+    }
+  ]
+ }
