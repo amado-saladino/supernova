@@ -2,6 +2,8 @@ package helpers;
 
 import org.openqa.selenium.WebDriver;
 
+import java.time.Duration;
+
 import static java.util.concurrent.TimeUnit.SECONDS;
 
 public abstract class Browser {
@@ -12,10 +14,9 @@ public abstract class Browser {
         if (driver == null) {
             driver = browserFactory.createBrowserSession(browserType, headless);
 
-            driver.manage().timeouts().implicitlyWait(
-                    Long.parseLong(PropertyReader.getProperty("default-wait")), SECONDS);
-            driver.manage().timeouts().pageLoadTimeout(100, SECONDS);
-            driver.manage().timeouts().setScriptTimeout(100, SECONDS);
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
+            driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(100));
+            driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(100));
             driver.manage().window().maximize();
         }
         return driver;

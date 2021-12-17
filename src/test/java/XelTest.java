@@ -2,7 +2,8 @@ import org.testng.annotations.Test;
 
 import java.util.Map;
 
-public class TestTwo extends TestCase {
+public class XelTest
+        extends TestCase {
     @Test
     void testTwo_one() {
         System.out.printf("driver is null? %s", driver == null);
