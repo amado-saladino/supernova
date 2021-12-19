@@ -61,7 +61,8 @@ public class Listener implements ITestListener {
             //contains 'rest' or 'backend', it will throw 'NullPointerException'
         String screenshotName = result.getTestClass().getName() +
                 result.getMethod().getMethodName();
-        String screenshotPah = Screenshot.takeScreenshot(screenshotName);
+
+            String screenshotPah = Screenshot.fullPageScreenshot(screenshotName);
 
             extentTest.get().fail("<b><font color=red>Failure screenshot",
                     MediaEntityBuilder.createScreenCaptureFromPath(screenshotPah).build());

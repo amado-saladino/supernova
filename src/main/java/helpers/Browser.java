@@ -10,9 +10,9 @@ public abstract class Browser {
     private static WebDriver driver = null;
     private static BrowserFactory browserFactory = new BrowserFactory();
 
-    public static WebDriver createDriver(String browserType, boolean headless) {
+    public static WebDriver createDriver(boolean headless) {
         if (driver == null) {
-            driver = browserFactory.createBrowserSession(browserType, headless);
+            driver = browserFactory.createBrowserSession(headless);
 
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
             driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(100));

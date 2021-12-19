@@ -40,13 +40,6 @@ The HTML format needs to be compiled, to compile these results, run this command
 
 > `allure-results` must be there where we're running this command.
 
-See `nginx-report-host` direcoty for hosting the report in a Kubernetes nginx pod.
-
-- Create the pod `kubectl create -f nginx-report-host/server.yml`
-- Expose the pod `kubectl expose pod server --type NodePort --port 80`
-
-> Review the host path before running the pod.
-
 ## References
 
 [Allure Report with Gradle and Test NG](https://github.com/allure-examples/allure-testng-gradle/blob/master/build.gradle)

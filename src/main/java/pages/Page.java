@@ -41,7 +41,7 @@ public abstract class Page {
     }
 
     public void injectScriptFile(String file) {
-        String script = new FileReader("scripts\\" + file).toString();
+        String script = new FileReader(file).toString();
         runScript(script);
     }
 }

@@ -28,7 +28,8 @@ public class BrowserFactory {
         } );
     }
 
-    public WebDriver createBrowserSession(String browser, boolean headless) {
+    public WebDriver createBrowserSession(boolean headless) {
+        String browser = PropertyReader.getProperty("browser").toLowerCase();
         Function<Boolean,WebDriver> fn = map.get(browser);
         if (fn !=null) {
             return fn.apply(headless);
