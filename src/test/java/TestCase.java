@@ -1,6 +1,5 @@
 import helpers.Browser;
 import helpers.ExcelReader;
-import helpers.JsonReader;
 import helpers.PropertyReader;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestNGMethod;
@@ -16,7 +15,7 @@ public class TestCase {
 
     @BeforeSuite
     void setupTest() {
-        driver = Browser.createDriver(org.openqa.selenium.remote.Browser.CHROME.browserName(), true);
+        driver = Browser.createDriver(true);
         driver.navigate().to(PropertyReader.getProperty("BASE_URL"));
     }
 

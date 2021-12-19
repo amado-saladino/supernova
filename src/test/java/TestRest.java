@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class Test1 {
+public class TestRest {
     private RestUtils requests;
 
     @BeforeClass
