@@ -52,9 +52,8 @@ The HTML format needs to be compiled, to compile these results, run this command
 > `allure-results` must be there where we're running this command.
 
 ```shell
-cd build
 allure generate --clean
-allure open ./allure-report --port 8000
+allure open --port 8000
 ```
 
 ### Allure report installation

@@ -60,7 +60,14 @@ jobs:
       with:
         name: test-report
         path: "build/reports/tests/test/*"
-        
+
+    - name: Allure report files
+      if: always()
+      uses: actions/upload-artifact@v2
+      with:
+        name: allure-report
+        path: "allure-results"
+
     - name: Upload Screenshots
       if: always()
       uses: actions/upload-artifact@v2
