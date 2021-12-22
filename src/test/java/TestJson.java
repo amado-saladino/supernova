@@ -11,7 +11,7 @@ public class TestJson {
     @Test
     void testScreenshot() {
         System.out.println("This method test will create a screenshot on failure");
-        Assert.assertEquals(1, 2);
+        Assert.assertEquals(1, 1);
     }
 
     @Test(dataProvider = "jsonDetails")
