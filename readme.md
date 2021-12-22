@@ -18,6 +18,8 @@ Json server could run in a container, container components reside in `json-serve
 
 ```shell
 docker run -d -p 81:80 -v $PWD:/data -e "DB=users.json" json-server:v1
+# or
+docker run -d -p 81:80 -v $PWD:/data -e "DB=users.json" ghcr.io/amado-saladino/json-server:v1
 ```
 
 ### port
@@ -47,9 +49,19 @@ could be replaced using `RestUtils.resolveVarsInString` method.
 It will be automatically generated in this path `build/allure-results`
 The HTML format needs to be compiled, to compile these results, run this command from `build` directory:
 
-`allure generate --clean`
-
 > `allure-results` must be there where we're running this command.
+
+```shell
+cd build
+allure generate --clean
+allure open ./allure-report --port 8000
+```
+
+### Allure report installation
+
+```shell
+sudo npm install -g allure-commandline
+```
 
 ## References
 

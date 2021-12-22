@@ -35,12 +35,11 @@ dependencies {
 allure {
     autoconfigure = true
     aspectjweaver = true
+    clean = true
     version = allureVersion
 
-    clean = true
-
     useTestNG {
-        version = allureVersion
+        version = '2.0-BETA12'
     }
 }
 

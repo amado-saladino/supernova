@@ -1,9 +1,15 @@
 import helpers.Faker;
+import helpers.PropertyReader;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.HomePage;
 
 public class TestHome extends TestCase {
+    @BeforeClass
+    void beforeClass() {
+        driver.navigate().to(PropertyReader.getProperty("BASE_URL"));
+    }
     @Test
     void testJscript() {
         System.out.printf("driver is null? %s%n", driver == null);

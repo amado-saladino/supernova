@@ -59,6 +59,11 @@ public class Listener implements ITestListener {
         try {
             //condition could be made here, if the package name
             //contains 'rest' or 'backend', it will throw 'NullPointerException'
+            if (result.getTestClass().getName().contains("TestRest")) {
+                System.out.println("Class Name: " + result.getTestClass().getName());
+                throw new NullPointerException();
+            }
+
         String screenshotName = result.getTestClass().getName() +
                 result.getMethod().getMethodName();
 
