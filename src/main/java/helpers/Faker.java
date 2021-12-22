@@ -32,6 +32,8 @@ public class Faker {
         return month;
     }
 
+    public Fairy getRandom() { return this.fairy; }
+
     public String getPassword() {
         return fairy.person(PersonProperties.withUsername("Amado")).getPassword();
     }
@@ -75,6 +77,8 @@ public class Faker {
     public String getRandomMessage() {
         return fairy.textProducer().sentence();
     }
+
+    public String getWebsite() { return fairy.company().getUrl(); }
 
     public RandomDate getRandomDate() {
         return new RandomDate();

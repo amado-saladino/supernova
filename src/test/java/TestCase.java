@@ -15,7 +15,7 @@ public class TestCase {
 
     @BeforeSuite
     void setupTest() {
-        driver = Browser.createDriver(true);
+        driver = Browser.createDriver();
         driver.navigate().to(PropertyReader.getProperty("BASE_URL"));
     }
 

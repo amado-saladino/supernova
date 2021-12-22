@@ -1,6 +1,4 @@
 {
-  "id": "{{id}}",
   "name": "{{name}}",
-  "age": {{age}},
-  "city": "{{city}}"
+  "job": "{{job}}"
 }
