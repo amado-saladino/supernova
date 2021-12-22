@@ -67,7 +67,7 @@ public class RestUtils {
      * @return Instance of object as per the given class
      */
     public <T> T deserializePath(Response res, String path, Class<T> type) {
-        Map obj = JsonPath.from(res.body().asString()).get(path);
+        T obj = JsonPath.from(res.body().asString()).get(path);
         String json = gson.toJson(obj);
         return gson.fromJson(json.toString(), type);
     }

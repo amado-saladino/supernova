@@ -3,5 +3,4 @@ RUN npm install -g json-server
 
 WORKDIR /data
 EXPOSE 80
-ENTRYPOINT ["json-server"]
-CMD ["db.json"]
+CMD ["sh", "-c", "json-server $DB"]

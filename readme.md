@@ -15,7 +15,18 @@ Supernova framework could be a starter kit for test automation framework.
 ## JSON server
 
 Json server could run in a container, container components reside in `json-server` folder.
-This image can run in `Katacoda` playground.
+
+```shell
+docker run -d -p 81:80 -v $PWD:/data -e "DB=users.json" json-server:v1
+```
+
+### port
+
+container port is defined in `json-server.json` config file
+
+### DB json file
+
+Env. var could be defined for the container to hold the relative path to json data source
 
 ## Scripts
 

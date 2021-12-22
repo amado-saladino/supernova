@@ -7,7 +7,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.Browser;
-import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.CapabilityType;
 
 import java.util.HashMap;
@@ -28,7 +27,8 @@ public class BrowserFactory {
         } );
     }
 
-    public WebDriver createBrowserSession(boolean headless) {
+    public WebDriver createBrowserSession() {
+        boolean headless = Boolean.parseBoolean(PropertyReader.getProperty("headless"));
         String browser = PropertyReader.getProperty("browser").toLowerCase();
         Function<Boolean,WebDriver> fn = map.get(browser);
         if (fn !=null) {
