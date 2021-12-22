@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: login to container registry
-      run: docker login -u ${{ github.actor }} -P ${{ secrets.GITHUB_TOKEN }}
+      run: docker login ghcr.io -u ${{ github.actor }} -P ${{ secrets.GITHUB_TOKEN }}
     - name: start json container
       run: >-
         docker run -d --rm -p 81:80  -e "DB=users.json" 
