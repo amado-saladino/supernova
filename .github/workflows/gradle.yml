@@ -11,13 +11,6 @@ jobs:
   build:
     name: UI and API Tests
     runs-on: ubuntu-latest
-#     services:
-#       json:
-#         image: ghcr.io/amado-saladino/json-server:v1
-#         ports:
-#         - 81:80
-#         env:
-#           var: val
 
     steps:
     - uses: actions/checkout@v2
