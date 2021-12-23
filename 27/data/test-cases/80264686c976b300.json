@@ -1,0 +1,130 @@
+{
+  "uid" : "80264686c976b300",
+  "name" : "testJQuery",
+  "fullName" : "TestHome.testJQuery",
+  "historyId" : "a458de4a29c81208709112ff1ce2c35b",
+  "time" : {
+    "start" : 1640281849077,
+    "stop" : 1640281849105,
+    "duration" : 28
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1640281848604,
+      "stop" : 1640281849001,
+      "duration" : 397
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setupTest",
+    "time" : {
+      "start" : 1640281833903,
+      "stop" : 1640281840654,
+      "duration" : 6751
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "teardownTest",
+    "time" : {
+      "start" : 1640281849807,
+      "stop" : 1640281849878,
+      "duration" : 71
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "TestHome"
+  }, {
+    "name" : "testClass",
+    "value" : "TestHome"
+  }, {
+    "name" : "testMethod",
+    "value" : "testJQuery"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Regression Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Chrome Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestHome"
+  }, {
+    "name" : "host",
+    "value" : "fv-az121-779"
+  }, {
+    "name" : "thread",
+    "value" : "3112@fv-az121-779.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "a2e6f12b94033911",
+        "reportUrl" : "https://amado-saladino.github.io/supernova/26//#testresult/a2e6f12b94033911",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640281539310,
+          "stop" : 1640281539334,
+          "duration" : 24
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "80264686c976b300.json",
+  "parameterValues" : [ ]
+}

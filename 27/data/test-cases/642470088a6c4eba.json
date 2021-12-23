@@ -1,0 +1,114 @@
+{
+  "uid" : "642470088a6c4eba",
+  "name" : "testColorWait",
+  "fullName" : "TestWait.testColorWait",
+  "historyId" : "35c31a21117c96289f97715d2384af5a",
+  "time" : {
+    "start" : 1640281846231,
+    "stop" : 1640281848602,
+    "duration" : 2371
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setupTest",
+    "time" : {
+      "start" : 1640281833903,
+      "stop" : 1640281840654,
+      "duration" : 6751
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "teardownTest",
+    "time" : {
+      "start" : 1640281849807,
+      "stop" : 1640281849878,
+      "duration" : 71
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "TestWait"
+  }, {
+    "name" : "testClass",
+    "value" : "TestWait"
+  }, {
+    "name" : "testMethod",
+    "value" : "testColorWait"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Regression Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Chrome Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestWait"
+  }, {
+    "name" : "host",
+    "value" : "fv-az121-779"
+  }, {
+    "name" : "thread",
+    "value" : "3112@fv-az121-779.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "c8e3e8a0fca431b2",
+        "reportUrl" : "https://amado-saladino.github.io/supernova/26//#testresult/c8e3e8a0fca431b2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640281536219,
+          "stop" : 1640281538629,
+          "duration" : 2410
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "642470088a6c4eba.json",
+  "parameterValues" : [ ]
+}

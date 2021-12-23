@@ -1,0 +1,557 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "Regression Suite",
+    "children" : [ {
+      "name" : "Chrome Test",
+      "children" : [ {
+        "name" : "TestJson",
+        "children" : [ {
+          "name" : "testJsonPath",
+          "uid" : "fec403d567df460b",
+          "parentUid" : "af3b86feae3e82a502661fc50d51698f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281840741,
+            "stop" : 1640281840747,
+            "duration" : 6
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{name=Ahmed, email=ahmed@mail.com, password=password4578, address={city=Cairo, country=Egypt}}" ]
+        }, {
+          "name" : "testJsonPath",
+          "uid" : "4049bc5895e29ae7",
+          "parentUid" : "af3b86feae3e82a502661fc50d51698f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281840792,
+            "stop" : 1640281840793,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{name=Islam, email=islam@mail.net, password=password1234, address={city=Berlin, country=Germany}}" ]
+        }, {
+          "name" : "testScreenshot",
+          "uid" : "5c6332de787db018",
+          "parentUid" : "af3b86feae3e82a502661fc50d51698f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281840797,
+            "stop" : 1640281840798,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testThree_two",
+          "uid" : "567867a69a9bc7ad",
+          "parentUid" : "af3b86feae3e82a502661fc50d51698f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281840805,
+            "stop" : 1640281840805,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{name=Ahmed, password=password4578, address={country=Egypt, city=Cairo}, email=ahmed@mail.com}" ]
+        }, {
+          "name" : "testThree_two",
+          "uid" : "d2afa3ed7a2fafc5",
+          "parentUid" : "af3b86feae3e82a502661fc50d51698f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281840807,
+            "stop" : 1640281840808,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{name=Islam, password=password1234, address={country=Germany, city=Berlin}, email=islam@mail.net}" ]
+        } ],
+        "uid" : "af3b86feae3e82a502661fc50d51698f"
+      }, {
+        "name" : "TestYaml",
+        "children" : [ {
+          "name" : "testContainers",
+          "uid" : "9e29ca675fce10af",
+          "parentUid" : "e927a0be5ae112a4590f37b73d2170b3",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281840893,
+            "stop" : 1640281840893,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{name=nginx-container, image=nginx, volumeMounts=[{\"name\":\"shared-data\",\"mountPath\":\"\\/usr\\/share\\/nginx\\/html\"}]}" ]
+        }, {
+          "name" : "testContainers",
+          "uid" : "270b1b1623b4bc8b",
+          "parentUid" : "e927a0be5ae112a4590f37b73d2170b3",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281840895,
+            "stop" : 1640281840895,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{name=debian-container, image=debian, volumeMounts=[{\"name\":\"shared-data\",\"mountPath\":\"\\/pod-data\"}], command=[\"\\/bin\\/sh\"], args=[\"-c\",\"echo Hello from the debian container > \\/pod-data\\/index.html\"]}" ]
+        }, {
+          "name" : "testYaml",
+          "uid" : "a69adabb811df81b",
+          "parentUid" : "e927a0be5ae112a4590f37b73d2170b3",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281840900,
+            "stop" : 1640281840901,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{name=nginx-container, image=nginx, volumeMounts=[{name=shared-data, mountPath=/usr/share/nginx/html}]}" ]
+        }, {
+          "name" : "testYaml",
+          "uid" : "6f2a0cd3d6f0cd35",
+          "parentUid" : "e927a0be5ae112a4590f37b73d2170b3",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281840902,
+            "stop" : 1640281840903,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{name=debian-container, image=debian, volumeMounts=[{name=shared-data, mountPath=/pod-data}], command=[/bin/sh], args=[-c, echo Hello from the debian container > /pod-data/index.html]}" ]
+        } ],
+        "uid" : "e927a0be5ae112a4590f37b73d2170b3"
+      }, {
+        "name" : "XelTest",
+        "children" : [ {
+          "name" : "test1",
+          "uid" : "88685cc6cd1def1f",
+          "parentUid" : "7462f62a82bb3024fc10e69d07853463",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281840905,
+            "stop" : 1640281840905,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testTwo_five",
+          "uid" : "eee98b5e9ebdc050",
+          "parentUid" : "7462f62a82bb3024fc10e69d07853463",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281841306,
+            "stop" : 1640281841308,
+            "duration" : 2
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{Email=ahmed@mail.com, Phone=4512-6514, Name=Ahmed}" ]
+        }, {
+          "name" : "testTwo_five",
+          "uid" : "18e3b4c355dbd3d2",
+          "parentUid" : "7462f62a82bb3024fc10e69d07853463",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281841309,
+            "stop" : 1640281841311,
+            "duration" : 2
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{Email=samira@mail.net, Phone=1258-4535, Name=Samira}" ]
+        }, {
+          "name" : "testTwo_five",
+          "uid" : "537534c6a34ffa67",
+          "parentUid" : "7462f62a82bb3024fc10e69d07853463",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281841312,
+            "stop" : 1640281841313,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{Email=hassan@mail.com, Phone=0100456789, Name=Hassan}" ]
+        }, {
+          "name" : "testTwo_four",
+          "uid" : "4d819f84113c263",
+          "parentUid" : "7462f62a82bb3024fc10e69d07853463",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281841356,
+            "stop" : 1640281841358,
+            "duration" : 2
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "Mohammed", "4512-6514", "mohammed@mail.com" ]
+        }, {
+          "name" : "testTwo_four",
+          "uid" : "9fa2f98054d8d8fc",
+          "parentUid" : "7462f62a82bb3024fc10e69d07853463",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281841360,
+            "stop" : 1640281841363,
+            "duration" : 3
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "Khoukha", "1258-4535", "khoukhaa@mail.net" ]
+        }, {
+          "name" : "testTwo_four",
+          "uid" : "8a0436b0b7400c6e",
+          "parentUid" : "7462f62a82bb3024fc10e69d07853463",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281841366,
+            "stop" : 1640281841367,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "Ola", "0100456789", "olaz@mail.com" ]
+        }, {
+          "name" : "testTwo_one",
+          "uid" : "1f1b9658d3a86ce6",
+          "parentUid" : "7462f62a82bb3024fc10e69d07853463",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281841376,
+            "stop" : 1640281841376,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testTwo_three",
+          "uid" : "546dd9b546f4ae99",
+          "parentUid" : "7462f62a82bb3024fc10e69d07853463",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281841458,
+            "stop" : 1640281841458,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{Email=akram@mail.com, Phone=4512-6514, Name=Akram}" ]
+        }, {
+          "name" : "testTwo_three",
+          "uid" : "a1e7e3fd38e442db",
+          "parentUid" : "7462f62a82bb3024fc10e69d07853463",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281841460,
+            "stop" : 1640281841460,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{Email=emad@mail.net, Phone=1258-4535, Name=Emad}" ]
+        }, {
+          "name" : "testTwo_three",
+          "uid" : "cf7d06fa629026fc",
+          "parentUid" : "7462f62a82bb3024fc10e69d07853463",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281841461,
+            "stop" : 1640281841462,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{Email=hussein@mail.com, Phone=0100456789, Name=Hussein}" ]
+        }, {
+          "name" : "testTwo_two",
+          "uid" : "a1766b042ed360f6",
+          "parentUid" : "7462f62a82bb3024fc10e69d07853463",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281841521,
+            "stop" : 1640281841522,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "Ibrahim", "4512-6514", "ibrahim@mail.com" ]
+        }, {
+          "name" : "testTwo_two",
+          "uid" : "f78399ff846b14cd",
+          "parentUid" : "7462f62a82bb3024fc10e69d07853463",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281841523,
+            "stop" : 1640281841523,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "Yasser", "1258-4535", "yasser@mail.net" ]
+        }, {
+          "name" : "testTwo_two",
+          "uid" : "2557e83e486fd663",
+          "parentUid" : "7462f62a82bb3024fc10e69d07853463",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281841524,
+            "stop" : 1640281841525,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "Amr", "0100456789", "amr@mail.com" ]
+        } ],
+        "uid" : "7462f62a82bb3024fc10e69d07853463"
+      }, {
+        "name" : "TestRest",
+        "children" : [ {
+          "name" : "test_delete_user",
+          "uid" : "a9b4bd900f8a6983",
+          "parentUid" : "9c1040f2c1ca6c8f9bfccc9be642236c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281842414,
+            "stop" : 1640281843590,
+            "duration" : 1176
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "json-server users",
+          "uid" : "ce1a6f1cbf288da",
+          "parentUid" : "9c1040f2c1ca6c8f9bfccc9be642236c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281843592,
+            "stop" : 1640281843789,
+            "duration" : 197
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_get_single_user",
+          "uid" : "57cbee3c625e0821",
+          "parentUid" : "9c1040f2c1ca6c8f9bfccc9be642236c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281843792,
+            "stop" : 1640281844269,
+            "duration" : 477
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "map response to model",
+          "uid" : "b6e582ef13027135",
+          "parentUid" : "9c1040f2c1ca6c8f9bfccc9be642236c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281844271,
+            "stop" : 1640281844508,
+            "duration" : 237
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_get_users",
+          "uid" : "9f7d4adf5a0eb9e3",
+          "parentUid" : "9c1040f2c1ca6c8f9bfccc9be642236c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281844511,
+            "stop" : 1640281844613,
+            "duration" : 102
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_patch_user",
+          "uid" : "854a171dcfb50435",
+          "parentUid" : "9c1040f2c1ca6c8f9bfccc9be642236c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281844615,
+            "stop" : 1640281845027,
+            "duration" : 412
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "json-server users",
+          "uid" : "174a2ce1c1d48b1",
+          "parentUid" : "9c1040f2c1ca6c8f9bfccc9be642236c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281845030,
+            "stop" : 1640281845321,
+            "duration" : 291
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_post_user",
+          "uid" : "bbe311ff93917188",
+          "parentUid" : "9c1040f2c1ca6c8f9bfccc9be642236c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281845323,
+            "stop" : 1640281845759,
+            "duration" : 436
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "json-server users",
+          "uid" : "bed5aa77703e139d",
+          "parentUid" : "9c1040f2c1ca6c8f9bfccc9be642236c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281845761,
+            "stop" : 1640281845783,
+            "duration" : 22
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "json-server users",
+          "uid" : "d266f6e461e36e60",
+          "parentUid" : "9c1040f2c1ca6c8f9bfccc9be642236c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281845784,
+            "stop" : 1640281845801,
+            "duration" : 17
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_resolve_vars",
+          "uid" : "ede834f3b5d58c4c",
+          "parentUid" : "9c1040f2c1ca6c8f9bfccc9be642236c",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281845802,
+            "stop" : 1640281846226,
+            "duration" : 424
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "9c1040f2c1ca6c8f9bfccc9be642236c"
+      }, {
+        "name" : "TestWait",
+        "children" : [ {
+          "name" : "test1",
+          "uid" : "6160dbfeaebbec19",
+          "parentUid" : "ea014e4deca8fcdc14a4a7a8ea9d69bb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281846228,
+            "stop" : 1640281846228,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testColorWait",
+          "uid" : "642470088a6c4eba",
+          "parentUid" : "ea014e4deca8fcdc14a4a7a8ea9d69bb",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281846231,
+            "stop" : 1640281848602,
+            "duration" : 2371
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "ea014e4deca8fcdc14a4a7a8ea9d69bb"
+      }, {
+        "name" : "TestHome",
+        "children" : [ {
+          "name" : "test1",
+          "uid" : "1532b06328cb643b",
+          "parentUid" : "bd4d4f4ef9552df46cbf0d5e62feddfd",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281849004,
+            "stop" : 1640281849004,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testFakeGenerator",
+          "uid" : "8db4d4c37f417fd6",
+          "parentUid" : "bd4d4f4ef9552df46cbf0d5e62feddfd",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281849005,
+            "stop" : 1640281849075,
+            "duration" : 70
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testJQuery",
+          "uid" : "80264686c976b300",
+          "parentUid" : "bd4d4f4ef9552df46cbf0d5e62feddfd",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281849077,
+            "stop" : 1640281849105,
+            "duration" : 28
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "testJscript",
+          "uid" : "dc9de68ea04e7cd0",
+          "parentUid" : "bd4d4f4ef9552df46cbf0d5e62feddfd",
+          "status" : "passed",
+          "time" : {
+            "start" : 1640281849107,
+            "stop" : 1640281849470,
+            "duration" : 363
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "bd4d4f4ef9552df46cbf0d5e62feddfd"
+      } ],
+      "uid" : "0dba2c8ab7a7d731f349de7b2b76c15d"
+    } ],
+    "uid" : "7401a688339d5b358289996f300eed3e"
+  } ],
+  "name" : "suites"
+}
