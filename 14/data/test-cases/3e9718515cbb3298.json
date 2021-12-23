@@ -1,0 +1,110 @@
+{
+  "uid" : "3e9718515cbb3298",
+  "name" : "testFakeGenerator",
+  "fullName" : "TestHome.testFakeGenerator",
+  "historyId" : "fc66c0c9a1632681876375a3c9868a19",
+  "time" : {
+    "start" : 1640261131777,
+    "stop" : 1640261131850,
+    "duration" : 73
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1640261131069,
+      "stop" : 1640261131773,
+      "duration" : 704
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setupTest",
+    "time" : {
+      "start" : 1640261118806,
+      "stop" : 1640261122805,
+      "duration" : 3999
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "teardownTest",
+    "time" : {
+      "start" : 1640261132611,
+      "stop" : 1640261132701,
+      "duration" : 90
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "TestHome"
+  }, {
+    "name" : "testClass",
+    "value" : "TestHome"
+  }, {
+    "name" : "testMethod",
+    "value" : "testFakeGenerator"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Regression Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Chrome Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestHome"
+  }, {
+    "name" : "host",
+    "value" : "fv-az36-988"
+  }, {
+    "name" : "thread",
+    "value" : "3083@fv-az36-988.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3e9718515cbb3298.json",
+  "parameterValues" : [ ]
+}

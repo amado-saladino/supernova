@@ -1,9 +1,0 @@
-[ {
-  "buildOrder" : 12,
-  "reportUrl" : "https://amado-saladino.github.io/supernova/12/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "run" : 40,
-    "retry" : 0
-  }
-} ]

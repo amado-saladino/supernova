@@ -1,0 +1,103 @@
+{
+  "uid" : "472f933c60ebca4c",
+  "name" : "testTwo_four",
+  "fullName" : "XelTest.testTwo_four",
+  "historyId" : "75d6e6d6e21c4b51a84a3cb3dc3fdb3c",
+  "time" : {
+    "start" : 1640261123684,
+    "stop" : 1640261123684,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setupTest",
+    "time" : {
+      "start" : 1640261118806,
+      "stop" : 1640261122805,
+      "duration" : 3999
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "teardownTest",
+    "time" : {
+      "start" : 1640261132611,
+      "stop" : 1640261132701,
+      "duration" : 90
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "XelTest"
+  }, {
+    "name" : "testClass",
+    "value" : "XelTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testTwo_four"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Regression Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Chrome Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "XelTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az36-988"
+  }, {
+    "name" : "thread",
+    "value" : "3083@fv-az36-988.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "Mohammed"
+  }, {
+    "name" : "arg1",
+    "value" : "4512-6514"
+  }, {
+    "name" : "arg2",
+    "value" : "mohammed@mail.com"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "472f933c60ebca4c.json",
+  "parameterValues" : [ "Mohammed", "4512-6514", "mohammed@mail.com" ]
+}

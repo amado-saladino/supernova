@@ -1,0 +1,97 @@
+{
+  "uid" : "88dbe1c78085a3cb",
+  "name" : "testContainers",
+  "fullName" : "TestYaml.testContainers",
+  "historyId" : "81d925631bf34effbdd23a077d83ded9",
+  "time" : {
+    "start" : 1640261123109,
+    "stop" : 1640261123109,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setupTest",
+    "time" : {
+      "start" : 1640261118806,
+      "stop" : 1640261122805,
+      "duration" : 3999
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "teardownTest",
+    "time" : {
+      "start" : 1640261132611,
+      "stop" : 1640261132701,
+      "duration" : 90
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "TestYaml"
+  }, {
+    "name" : "testClass",
+    "value" : "TestYaml"
+  }, {
+    "name" : "testMethod",
+    "value" : "testContainers"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Regression Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Chrome Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestYaml"
+  }, {
+    "name" : "host",
+    "value" : "fv-az36-988"
+  }, {
+    "name" : "thread",
+    "value" : "3083@fv-az36-988.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "{name=nginx-container, image=nginx, volumeMounts=[{\"name\":\"shared-data\",\"mountPath\":\"\\/usr\\/share\\/nginx\\/html\"}]}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "88dbe1c78085a3cb.json",
+  "parameterValues" : [ "{name=nginx-container, image=nginx, volumeMounts=[{\"name\":\"shared-data\",\"mountPath\":\"\\/usr\\/share\\/nginx\\/html\"}]}" ]
+}
