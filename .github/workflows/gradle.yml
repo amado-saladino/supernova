@@ -103,6 +103,7 @@ jobs:
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: screenshots
         destination_dir: extent
+        keep_files: true
         
     - name: Upload Screenshots
       if: always()
