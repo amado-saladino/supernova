@@ -89,7 +89,7 @@ jobs:
         
     - name: Deploy allure report to Github Pages
       if: always()
-      uses: peaceiris/actions-gh-pages@v2
+      uses: peaceiris/actions-gh-pages@v3
       env:
         PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PUBLISH_BRANCH: gh-pages
@@ -97,11 +97,12 @@ jobs:
         
     - name: Deploy extent report to Github Pages
       if: always()
-      uses: peaceiris/actions-gh-pages@v2
+      uses: peaceiris/actions-gh-pages@v3
       env:
         PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: screenshots
+        destination_dir: extent
         
     - name: Upload Screenshots
       if: always()
