@@ -15,10 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       if: always()
-      continue-on-error: true
-      with:
-        ref: gh-pages
-        path: gh-pages
     
     - name: login to container registry
       run: docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
