@@ -1,0 +1,94 @@
+{
+  "uid" : "edb567789223bbcf",
+  "name" : "testColorWait",
+  "fullName" : "TestWait.testColorWait",
+  "historyId" : "35c31a21117c96289f97715d2384af5a",
+  "time" : {
+    "start" : 1640278068918,
+    "stop" : 1640278071268,
+    "duration" : 2350
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setupTest",
+    "time" : {
+      "start" : 1640278058498,
+      "stop" : 1640278062821,
+      "duration" : 4323
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "teardownTest",
+    "time" : {
+      "start" : 1640278072341,
+      "stop" : 1640278072415,
+      "duration" : 74
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "TestWait"
+  }, {
+    "name" : "testClass",
+    "value" : "TestWait"
+  }, {
+    "name" : "testMethod",
+    "value" : "testColorWait"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Regression Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Chrome Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestWait"
+  }, {
+    "name" : "host",
+    "value" : "fv-az33-355"
+  }, {
+    "name" : "thread",
+    "value" : "3123@fv-az33-355.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "edb567789223bbcf.json",
+  "parameterValues" : [ ]
+}
