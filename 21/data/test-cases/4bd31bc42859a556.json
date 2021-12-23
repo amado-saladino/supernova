@@ -1,0 +1,132 @@
+{
+  "uid" : "4bd31bc42859a556",
+  "name" : "testScreenshot",
+  "fullName" : "TestJson.testScreenshot",
+  "historyId" : "497491e1abaf9a2f72a2fbdec1380680",
+  "time" : {
+    "start" : 1640277031197,
+    "stop" : 1640277031200,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setupTest",
+    "time" : {
+      "start" : 1640277026792,
+      "stop" : 1640277030979,
+      "duration" : 4187
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "teardownTest",
+    "time" : {
+      "start" : 1640277040956,
+      "stop" : 1640277041032,
+      "duration" : 76
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "TestJson"
+  }, {
+    "name" : "testClass",
+    "value" : "TestJson"
+  }, {
+    "name" : "testMethod",
+    "value" : "testScreenshot"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Regression Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Chrome Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestJson"
+  }, {
+    "name" : "host",
+    "value" : "fv-az39-403"
+  }, {
+    "name" : "thread",
+    "value" : "3120@fv-az39-403.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "f2ae6c517965f3e1",
+        "reportUrl" : "https://amado-saladino.github.io/supernova/20//#testresult/f2ae6c517965f3e1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640266312535,
+          "stop" : 1640266312537,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "3b99ca90da4605a5",
+        "reportUrl" : "https://amado-saladino.github.io/supernova/19//#testresult/3b99ca90da4605a5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640264928723,
+          "stop" : 1640264928725,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "68691d437e1cf785",
+        "reportUrl" : "https://amado-saladino.github.io/supernova/18//#testresult/68691d437e1cf785",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640263371065,
+          "stop" : 1640263371078,
+          "duration" : 13
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "4bd31bc42859a556.json",
+  "parameterValues" : [ ]
+}

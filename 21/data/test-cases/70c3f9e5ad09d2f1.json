@@ -1,0 +1,148 @@
+{
+  "uid" : "70c3f9e5ad09d2f1",
+  "name" : "test_delete_user",
+  "fullName" : "TestRest.test_delete_user",
+  "historyId" : "9e4ab467e291e1c0cdf6826849462faf",
+  "time" : {
+    "start" : 1640277033039,
+    "stop" : 1640277034301,
+    "duration" : 1262
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1640277032137,
+      "stop" : 1640277033038,
+      "duration" : 901
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setupTest",
+    "time" : {
+      "start" : 1640277026792,
+      "stop" : 1640277030979,
+      "duration" : 4187
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "teardownTest",
+    "time" : {
+      "start" : 1640277040956,
+      "stop" : 1640277041032,
+      "duration" : 76
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "TestRest"
+  }, {
+    "name" : "testClass",
+    "value" : "TestRest"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_delete_user"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Regression Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Chrome Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az39-403"
+  }, {
+    "name" : "thread",
+    "value" : "3120@fv-az39-403.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "968ba4b83b072c61",
+        "reportUrl" : "https://amado-saladino.github.io/supernova/20//#testresult/968ba4b83b072c61",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640266314252,
+          "stop" : 1640266315502,
+          "duration" : 1250
+        }
+      }, {
+        "uid" : "c507ef46d7f89e27",
+        "reportUrl" : "https://amado-saladino.github.io/supernova/19//#testresult/c507ef46d7f89e27",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640264930524,
+          "stop" : 1640264931781,
+          "duration" : 1257
+        }
+      }, {
+        "uid" : "54320eab8a52c4a2",
+        "reportUrl" : "https://amado-saladino.github.io/supernova/18//#testresult/54320eab8a52c4a2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640263372986,
+          "stop" : 1640263374386,
+          "duration" : 1400
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "70c3f9e5ad09d2f1.json",
+  "parameterValues" : [ ]
+}

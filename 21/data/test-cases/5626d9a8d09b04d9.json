@@ -1,0 +1,135 @@
+{
+  "uid" : "5626d9a8d09b04d9",
+  "name" : "testTwo_three",
+  "fullName" : "XelTest.testTwo_three",
+  "historyId" : "fc00d2bc3fd28d72341b748a76151826",
+  "time" : {
+    "start" : 1640277032072,
+    "stop" : 1640277032072,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setupTest",
+    "time" : {
+      "start" : 1640277026792,
+      "stop" : 1640277030979,
+      "duration" : 4187
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "teardownTest",
+    "time" : {
+      "start" : 1640277040956,
+      "stop" : 1640277041032,
+      "duration" : 76
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "XelTest"
+  }, {
+    "name" : "testClass",
+    "value" : "XelTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testTwo_three"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Regression Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Chrome Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "XelTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az39-403"
+  }, {
+    "name" : "thread",
+    "value" : "3120@fv-az39-403.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "{Email=akram@mail.com, Phone=4512-6514, Name=Akram}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "4388d2542616216",
+        "reportUrl" : "https://amado-saladino.github.io/supernova/20//#testresult/4388d2542616216",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640266313362,
+          "stop" : 1640266313362,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "42f1b2aa7087bf6f",
+        "reportUrl" : "https://amado-saladino.github.io/supernova/19//#testresult/42f1b2aa7087bf6f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640264929542,
+          "stop" : 1640264929542,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "52e84ed207e79cff",
+        "reportUrl" : "https://amado-saladino.github.io/supernova/18//#testresult/52e84ed207e79cff",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640263371982,
+          "stop" : 1640263371983,
+          "duration" : 1
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "5626d9a8d09b04d9.json",
+  "parameterValues" : [ "{Email=akram@mail.com, Phone=4512-6514, Name=Akram}" ]
+}

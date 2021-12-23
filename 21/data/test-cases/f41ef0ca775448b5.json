@@ -1,0 +1,135 @@
+{
+  "uid" : "f41ef0ca775448b5",
+  "name" : "testThree_two",
+  "fullName" : "TestJson.testThree_two",
+  "historyId" : "aaf2a29d71f661b8da79f489026afbe6",
+  "time" : {
+    "start" : 1640277031212,
+    "stop" : 1640277031216,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setupTest",
+    "time" : {
+      "start" : 1640277026792,
+      "stop" : 1640277030979,
+      "duration" : 4187
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "teardownTest",
+    "time" : {
+      "start" : 1640277040956,
+      "stop" : 1640277041032,
+      "duration" : 76
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "TestJson"
+  }, {
+    "name" : "testClass",
+    "value" : "TestJson"
+  }, {
+    "name" : "testMethod",
+    "value" : "testThree_two"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Regression Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Chrome Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestJson"
+  }, {
+    "name" : "host",
+    "value" : "fv-az39-403"
+  }, {
+    "name" : "thread",
+    "value" : "3120@fv-az39-403.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "{name=Ahmed, password=password4578, address={country=Egypt, city=Cairo}, email=ahmed@mail.com}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "369541b0754ed034",
+        "reportUrl" : "https://amado-saladino.github.io/supernova/20//#testresult/369541b0754ed034",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640266312551,
+          "stop" : 1640266312556,
+          "duration" : 5
+        }
+      }, {
+        "uid" : "f6f9e44867b1e4ea",
+        "reportUrl" : "https://amado-saladino.github.io/supernova/19//#testresult/f6f9e44867b1e4ea",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640264928732,
+          "stop" : 1640264928733,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "973156488b8d69df",
+        "reportUrl" : "https://amado-saladino.github.io/supernova/18//#testresult/973156488b8d69df",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640263371093,
+          "stop" : 1640263371095,
+          "duration" : 2
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "f41ef0ca775448b5.json",
+  "parameterValues" : [ "{name=Ahmed, password=password4578, address={country=Egypt, city=Cairo}, email=ahmed@mail.com}" ]
+}
