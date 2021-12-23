@@ -1,0 +1,110 @@
+{
+  "uid" : "dd1acc9449ea4e20",
+  "name" : "testJscript",
+  "fullName" : "TestHome.testJscript",
+  "historyId" : "bb9830d3f498e8abacaa7d684bf8aee6",
+  "time" : {
+    "start" : 1640281539336,
+    "stop" : 1640281539647,
+    "duration" : 311
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1640281538630,
+      "stop" : 1640281539268,
+      "duration" : 638
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setupTest",
+    "time" : {
+      "start" : 1640281525177,
+      "stop" : 1640281529991,
+      "duration" : 4814
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "teardownTest",
+    "time" : {
+      "start" : 1640281539965,
+      "stop" : 1640281540039,
+      "duration" : 74
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "TestHome"
+  }, {
+    "name" : "testClass",
+    "value" : "TestHome"
+  }, {
+    "name" : "testMethod",
+    "value" : "testJscript"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Regression Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Chrome Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestHome"
+  }, {
+    "name" : "host",
+    "value" : "fv-az33-355"
+  }, {
+    "name" : "thread",
+    "value" : "3094@fv-az33-355.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "dd1acc9449ea4e20.json",
+  "parameterValues" : [ ]
+}

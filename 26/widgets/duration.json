@@ -1,0 +1,401 @@
+[ {
+  "uid" : "299151b731db63de",
+  "name" : "testTwo_three",
+  "time" : {
+    "start" : 1640281531084,
+    "stop" : 1640281531085,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8a5844922efa3770",
+  "name" : "test_get_users",
+  "time" : {
+    "start" : 1640281534703,
+    "stop" : 1640281534816,
+    "duration" : 113
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "73ecd2b5dadfd070",
+  "name" : "testTwo_three",
+  "time" : {
+    "start" : 1640281531090,
+    "stop" : 1640281531093,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1ae046aab25654c3",
+  "name" : "json-server users",
+  "time" : {
+    "start" : 1640281535140,
+    "stop" : 1640281535427,
+    "duration" : 287
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5b769a387ce6e62f",
+  "name" : "testJsonPath",
+  "time" : {
+    "start" : 1640281530188,
+    "stop" : 1640281530192,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dd1acc9449ea4e20",
+  "name" : "testJscript",
+  "time" : {
+    "start" : 1640281539336,
+    "stop" : 1640281539647,
+    "duration" : 311
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "db5adbfac101e172",
+  "name" : "testYaml",
+  "time" : {
+    "start" : 1640281530344,
+    "stop" : 1640281530345,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7fc4ebf89536a742",
+  "name" : "testThree_two",
+  "time" : {
+    "start" : 1640281530230,
+    "stop" : 1640281530234,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a996f5d94189efe",
+  "name" : "json-server users",
+  "time" : {
+    "start" : 1640281535806,
+    "stop" : 1640281535820,
+    "duration" : 14
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3aaf4bd66305f5bf",
+  "name" : "test1",
+  "time" : {
+    "start" : 1640281539270,
+    "stop" : 1640281539271,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "70f5850dca9d90f6",
+  "name" : "json-server users",
+  "time" : {
+    "start" : 1640281535775,
+    "stop" : 1640281535803,
+    "duration" : 28
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8867c815e03ae20",
+  "name" : "testTwo_two",
+  "time" : {
+    "start" : 1640281531158,
+    "stop" : 1640281531159,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ff8052299e9b8202",
+  "name" : "testTwo_four",
+  "time" : {
+    "start" : 1640281530982,
+    "stop" : 1640281530984,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "20b687004b45e6b4",
+  "name" : "testTwo_five",
+  "time" : {
+    "start" : 1640281530897,
+    "stop" : 1640281530898,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c8e3e8a0fca431b2",
+  "name" : "testColorWait",
+  "time" : {
+    "start" : 1640281536219,
+    "stop" : 1640281538629,
+    "duration" : 2410
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8862f90e0426f28c",
+  "name" : "test1",
+  "time" : {
+    "start" : 1640281536217,
+    "stop" : 1640281536218,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d66ba6e870c41daa",
+  "name" : "testTwo_five",
+  "time" : {
+    "start" : 1640281530893,
+    "stop" : 1640281530895,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a3d6fd6251fa1b36",
+  "name" : "testFakeGenerator",
+  "time" : {
+    "start" : 1640281539279,
+    "stop" : 1640281539308,
+    "duration" : 29
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8c74056312feacad",
+  "name" : "test_post_user",
+  "time" : {
+    "start" : 1640281535429,
+    "stop" : 1640281535773,
+    "duration" : 344
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "24431b24dd386f1a",
+  "name" : "testTwo_two",
+  "time" : {
+    "start" : 1640281531165,
+    "stop" : 1640281531168,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1de3acb549cb7d85",
+  "name" : "testTwo_three",
+  "time" : {
+    "start" : 1640281531087,
+    "stop" : 1640281531088,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a2e6f12b94033911",
+  "name" : "testJQuery",
+  "time" : {
+    "start" : 1640281539310,
+    "stop" : 1640281539334,
+    "duration" : 24
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1f457fe5b2007c7e",
+  "name" : "test_patch_user",
+  "time" : {
+    "start" : 1640281534818,
+    "stop" : 1640281535138,
+    "duration" : 320
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6ed35d079e172e87",
+  "name" : "json-server users",
+  "time" : {
+    "start" : 1640281533291,
+    "stop" : 1640281533552,
+    "duration" : 261
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bd5556889abd1876",
+  "name" : "test_get_single_user",
+  "time" : {
+    "start" : 1640281533556,
+    "stop" : 1640281534441,
+    "duration" : 885
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3f3b1856d41edad7",
+  "name" : "testThree_two",
+  "time" : {
+    "start" : 1640281530221,
+    "stop" : 1640281530224,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a07898506d6eac3f",
+  "name" : "testTwo_four",
+  "time" : {
+    "start" : 1640281530994,
+    "stop" : 1640281530996,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "22ba878371af9c07",
+  "name" : "testYaml",
+  "time" : {
+    "start" : 1640281530341,
+    "stop" : 1640281530342,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "951fecf162b92690",
+  "name" : "test_delete_user",
+  "time" : {
+    "start" : 1640281532101,
+    "stop" : 1640281533289,
+    "duration" : 1188
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c5f395d5c18aba3a",
+  "name" : "testJsonPath",
+  "time" : {
+    "start" : 1640281530098,
+    "stop" : 1640281530113,
+    "duration" : 15
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2e545a0a5ee5c4c6",
+  "name" : "testScreenshot",
+  "time" : {
+    "start" : 1640281530204,
+    "stop" : 1640281530207,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1da4e3fcc12e975e",
+  "name" : "testContainers",
+  "time" : {
+    "start" : 1640281530332,
+    "stop" : 1640281530333,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3e19de9918993beb",
+  "name" : "test_resolve_vars",
+  "time" : {
+    "start" : 1640281535822,
+    "stop" : 1640281536214,
+    "duration" : 392
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "914bbc22f013bc7d",
+  "name" : "testTwo_two",
+  "time" : {
+    "start" : 1640281531161,
+    "stop" : 1640281531162,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "af8782221f2f8caa",
+  "name" : "testTwo_four",
+  "time" : {
+    "start" : 1640281530988,
+    "stop" : 1640281530989,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "236dbc7577d24db7",
+  "name" : "testTwo_one",
+  "time" : {
+    "start" : 1640281531006,
+    "stop" : 1640281531007,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b6c626a4e29a1329",
+  "name" : "testTwo_five",
+  "time" : {
+    "start" : 1640281530900,
+    "stop" : 1640281530900,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4f14b3fcc31aacc",
+  "name" : "test1",
+  "time" : {
+    "start" : 1640281530347,
+    "stop" : 1640281530348,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e6c8987119a7733e",
+  "name" : "testContainers",
+  "time" : {
+    "start" : 1640281530321,
+    "stop" : 1640281530325,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b904d9300bb6e991",
+  "name" : "map response to model",
+  "time" : {
+    "start" : 1640281534444,
+    "stop" : 1640281534702,
+    "duration" : 258
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
