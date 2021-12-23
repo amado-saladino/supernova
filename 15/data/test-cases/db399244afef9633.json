@@ -1,0 +1,97 @@
+{
+  "uid" : "db399244afef9633",
+  "name" : "testTwo_three",
+  "fullName" : "XelTest.testTwo_three",
+  "historyId" : "fc00d2bc3fd28d72341b748a76151826",
+  "time" : {
+    "start" : 1640261818554,
+    "stop" : 1640261818555,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setupTest",
+    "time" : {
+      "start" : 1640261805341,
+      "stop" : 1640261817060,
+      "duration" : 11719
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "teardownTest",
+    "time" : {
+      "start" : 1640261829434,
+      "stop" : 1640261829520,
+      "duration" : 86
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "XelTest"
+  }, {
+    "name" : "testClass",
+    "value" : "XelTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testTwo_three"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Regression Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Chrome Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "XelTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az39-403"
+  }, {
+    "name" : "thread",
+    "value" : "3057@fv-az39-403.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "{Email=akram@mail.com, Phone=4512-6514, Name=Akram}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "db399244afef9633.json",
+  "parameterValues" : [ "{Email=akram@mail.com, Phone=4512-6514, Name=Akram}" ]
+}
