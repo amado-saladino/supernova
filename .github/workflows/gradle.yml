@@ -71,6 +71,17 @@ jobs:
         name: test-report
         path: "build/reports/tests/test/*"
         
+    - name: Deploy extent report to Github Pages
+      if: always()
+      uses: peaceiris/actions-gh-pages@v2
+      env:
+        PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: screenshots
+        destination_dir: extent
+        keep_files: true
+        exclude_assets: .gitkeep
+        
     - name: Get Allure history
       uses: actions/checkout@v2
       if: always()
@@ -94,16 +105,6 @@ jobs:
         PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: allure-history
-        
-    - name: Deploy extent report to Github Pages
-      if: always()
-      uses: peaceiris/actions-gh-pages@v2
-      env:
-        PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: screenshots
-        destination_dir: extent
-        keep_files: true
         
     - name: Upload Screenshots
       if: always()
