@@ -70,13 +70,6 @@ jobs:
       with:
         name: test-report
         path: "build/reports/tests/test/*"
-
-    - name: Allure report files
-      if: always()
-      uses: actions/upload-artifact@v2
-      with:
-        name: allure-report
-        path: "allure-results"
         
     - name: Get Allure history
       uses: actions/checkout@v2
@@ -94,13 +87,21 @@ jobs:
         allure_results: allure-results
         allure_history: allure-history
         
-    - name: Deploy report to Github Pages
+    - name: Deploy allure report to Github Pages
       if: always()
       uses: peaceiris/actions-gh-pages@v2
       env:
         PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: allure-history
+        
+    - name: Deploy extent report to Github Pages
+      if: always()
+      uses: peaceiris/actions-gh-pages@v2
+      env:
+        PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: screenshots
         
     - name: Upload Screenshots
       if: always()
