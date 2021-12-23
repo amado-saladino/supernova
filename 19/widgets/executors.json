@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://amado-saladino.github.io/supernova",
+  "buildOrder" : 19,
+  "buildName" : "GitHub Actions Run #1615661182",
+  "buildUrl" : "https://github.com/amado-saladino/supernova/actions/runs/1615661182",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://amado-saladino.github.io/supernova/19/"
+} ]

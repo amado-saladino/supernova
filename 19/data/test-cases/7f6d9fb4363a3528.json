@@ -1,0 +1,123 @@
+{
+  "uid" : "7f6d9fb4363a3528",
+  "name" : "testTwo_four",
+  "fullName" : "XelTest.testTwo_four",
+  "historyId" : "ccbd329ab7c859d7d0f0fbe9f944f70c",
+  "time" : {
+    "start" : 1640264929467,
+    "stop" : 1640264929470,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setupTest",
+    "time" : {
+      "start" : 1640264920457,
+      "stop" : 1640264928574,
+      "duration" : 8117
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "teardownTest",
+    "time" : {
+      "start" : 1640264939456,
+      "stop" : 1640264939532,
+      "duration" : 76
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "XelTest"
+  }, {
+    "name" : "testClass",
+    "value" : "XelTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testTwo_four"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Regression Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Chrome Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "XelTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az121-779"
+  }, {
+    "name" : "thread",
+    "value" : "3082@fv-az121-779.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "Ola"
+  }, {
+    "name" : "arg1",
+    "value" : "0100456789"
+  }, {
+    "name" : "arg2",
+    "value" : "olaz@mail.com"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "43ba9b417657b7f7",
+        "reportUrl" : "https://amado-saladino.github.io/supernova/18//#testresult/43ba9b417657b7f7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1640263371894,
+          "stop" : 1640263371895,
+          "duration" : 1
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "7f6d9fb4363a3528.json",
+  "parameterValues" : [ "Ola", "0100456789", "olaz@mail.com" ]
+}
