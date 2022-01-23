@@ -34,6 +34,10 @@ Env. var could be defined for the container to hold the relative path to json da
 
 Scripts can be injected in a web page, there is `jquery.js` to inject jQuery in a web page
 
+## Custom wait
+
+`ColorPage` has a cusotm wait applied referring this [example](https://www.techbeamers.com/webdriver-fluent-wait-command-examples/) 
+
 ## Data placeholders
 
 Placeholders could be easily replaced by values

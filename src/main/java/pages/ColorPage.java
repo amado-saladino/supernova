@@ -10,9 +10,7 @@ public class ColorPage extends Page {
         super(driver);
     }
 
-    /**
-     * https://www.techbeamers.com/webdriver-fluent-wait-command-examples/
-     */
+    
     public void waitForColors() {
         wait.waitForCustomCondition(new Function<WebDriver, Boolean>() {
             @Override

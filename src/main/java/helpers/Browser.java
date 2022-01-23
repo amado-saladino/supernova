@@ -14,7 +14,6 @@ public abstract class Browser {
 
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
             driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(100));
-            driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(100));
             driver.manage().window().maximize();
         }
         return driver;
