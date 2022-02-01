@@ -1,22 +1,3 @@
 [ {
-  "buildOrder" : 28,
-  "reportUrl" : "https://amado-saladino.github.io/supernova/28/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "duration" : 10235
-  }
-}, {
-  "buildOrder" : 27,
-  "reportUrl" : "https://amado-saladino.github.io/supernova/27/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "duration" : 8729
-  }
-}, {
-  "buildOrder" : 26,
-  "reportUrl" : "https://amado-saladino.github.io/supernova/26/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "duration" : 9549
-  }
+  "data" : { }
 } ]
