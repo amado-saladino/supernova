@@ -85,7 +85,6 @@ public class TestRest {
     void test_resolve_vars() {
         String txt = new FileReader("data/user-placeholders.json").toString();
 
-        Faker faker = new Faker();
         String name = faker.getFemaleFirstName();
 
         //Key should match the placeholder in json file
@@ -116,7 +115,6 @@ public class TestRest {
 
     @Test
     void test_post_user() {
-        Faker faker = new Faker();
         int id = faker.getRandom().person().hashCode();
         String email = faker.getEmail();
         String fname = faker.getMaleFirstName();
