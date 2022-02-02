@@ -41,8 +41,8 @@ jobs:
     - name: test workspace
       run: echo ${{ github.workspace }}
       
-    - name: call json server
-      run: curl http://localhost:8000/users
+#    - name: call json server
+#      run: curl http://localhost:8000/users
         
     - name: test with gradle
       run: gradle clean test
