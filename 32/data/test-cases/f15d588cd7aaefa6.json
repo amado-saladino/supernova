@@ -1,0 +1,110 @@
+{
+  "uid" : "f15d588cd7aaefa6",
+  "name" : "test1",
+  "fullName" : "TestCase.test1",
+  "historyId" : "3060f36a43e99cff7012746750d7c0b",
+  "time" : {
+    "start" : 1643803381598,
+    "stop" : 1643803381599,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1643803381311,
+      "stop" : 1643803381597,
+      "duration" : 286
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setupTest",
+    "time" : {
+      "start" : 1643803369247,
+      "stop" : 1643803372962,
+      "duration" : 3715
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "teardownTest",
+    "time" : {
+      "start" : 1643803382409,
+      "stop" : 1643803382479,
+      "duration" : 70
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "TestHome"
+  }, {
+    "name" : "testClass",
+    "value" : "TestHome"
+  }, {
+    "name" : "testMethod",
+    "value" : "test1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Regression Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Chrome Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestHome"
+  }, {
+    "name" : "host",
+    "value" : "fv-az77-519"
+  }, {
+    "name" : "thread",
+    "value" : "3077@fv-az77-519.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f15d588cd7aaefa6.json",
+  "parameterValues" : [ ]
+}

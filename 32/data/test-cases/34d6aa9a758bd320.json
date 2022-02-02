@@ -1,0 +1,110 @@
+{
+  "uid" : "34d6aa9a758bd320",
+  "name" : "test_get_users",
+  "fullName" : "TestRest.test_get_users",
+  "historyId" : "87c688fd02dd2fca18d0b863b8c43895",
+  "time" : {
+    "start" : 1643803377339,
+    "stop" : 1643803377442,
+    "duration" : 103
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1643803373848,
+      "stop" : 1643803374668,
+      "duration" : 820
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setupTest",
+    "time" : {
+      "start" : 1643803369247,
+      "stop" : 1643803372962,
+      "duration" : 3715
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "teardownTest",
+    "time" : {
+      "start" : 1643803382409,
+      "stop" : 1643803382479,
+      "duration" : 70
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "TestRest"
+  }, {
+    "name" : "testClass",
+    "value" : "TestRest"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_get_users"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Regression Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Chrome Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az77-519"
+  }, {
+    "name" : "thread",
+    "value" : "3077@fv-az77-519.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "34d6aa9a758bd320.json",
+  "parameterValues" : [ ]
+}
