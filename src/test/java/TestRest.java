@@ -23,11 +23,12 @@ public class TestRest {
     private RestUtils requests;
     private Faker faker;
     private String jsonAPI = PropertyReader.getProperty("REST-JSON");
+    private String reqresAPI = PropertyReader.getProperty("reqres-api");
 
     @BeforeClass
     void setup() {
         requests = new RestUtils();
-        RestAssured.baseURI = "https://reqres.in/";
+        RestAssured.baseURI = reqresAPI;
         faker = new Faker();
     }
 
@@ -73,7 +74,7 @@ public class TestRest {
         System.out.println(user_txt);
 
         System.out.println("---");
-        Response res = requests.send("http://" + jsonAPI + ":81/users", user_txt, Method.POST);
+        Response res = requests.send(jsonAPI + "/users", user_txt, Method.POST);
         User.UserBuilder userBuilder = requests.deserializeString(user_txt, User.UserBuilder.class);
         User user = userBuilder.build();
         System.out.println(user.toString());
@@ -136,7 +137,7 @@ public class TestRest {
         payload.put("age", age);
         payload.put("city", city);
 
-        Response res = requests.send("http://" + jsonAPI + ":81/users",payload, Method.POST);
+        Response res = requests.send(jsonAPI + "/users",payload, Method.POST);
         User.UserBuilder userBuilder = requests.deserializePath(res,"", User.UserBuilder.class);
         User user = userBuilder.build();
         System.out.println(res.body().asString());
@@ -145,7 +146,7 @@ public class TestRest {
 
     @Test(enabled = true, description = "json-server users")
     void test_get_method_no_body() {
-        Response res = requests.send("http://" + jsonAPI + ":81/users","",Method.GET);
+        Response res = requests.send(jsonAPI + "/users","",Method.GET);
         System.out.println(res.body().asString());
 
         User.UserBuilder[] userBuilder= requests.deserializeString(res.body().asString(), User.UserBuilder[].class);
@@ -161,7 +162,7 @@ public class TestRest {
         int age = faker.getRandom().person().getAge();
         String city = faker.getCity();
         User user = new User.UserBuilder(name, age).setCity(city).build();
-        Response res = requests.send("http://localhost:81/users/{id}",user,Method.PUT,3);
+        Response res = requests.send(jsonAPI + "/users/{id}",user,Method.PUT,3);
         res.then().body("",hasEntry("name", name),"",
                 hasEntry("age", age), "",hasEntry("city",city));
         res.prettyPrint();
