@@ -1,0 +1,37 @@
+version: '3'
+services:
+  report-viewer:
+    image: nginx:1.14
+    ports: 
+      - "3000:80"
+    volumes:
+      - gradle-report:/usr/share/nginx/html
+  
+  test:
+    image: amadosaladino/selenium-gradle
+    depends_on:
+      - json-server
+    volumes:
+      - .:/app
+      - gradle-report:/report
+      - gradle-repo:/root/.gradle/caches/modules-2/files-2.1
+  
+  gallery:
+    image: ghcr.io/linuxserver/photoshow
+    ports:
+      - "8000:80"
+    volumes:
+      - ./screenshots:/Pictures:ro
+
+  json-server:
+    image: ghcr.io/amado-saladino/json-server:v1
+    volumes:
+      - ./json-server:/data
+    ports:
+      - "8001:80"
+    environment:
+      - DB=users.json
+
+volumes:
+  gradle-repo:
+  gradle-report:

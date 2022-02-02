@@ -28,7 +28,7 @@ jobs:
       run: docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
     - name: start json container
       run: >-
-        docker run -d --rm -p 81:80  -e "DB=users.json" 
+        docker run -d --rm -p 8000:80 -e "DB=users.json" 
         -v ${{ github.workspace }}/json-server:/data ghcr.io/amado-saladino/json-server:v1
       
     - name: Set up JDK 11
@@ -42,7 +42,7 @@ jobs:
       run: echo ${{ github.workspace }}
       
     - name: call json server
-      run: curl localhost:81/users
+      run: curl http://localhost:8000/users
         
     - name: test with gradle
       run: gradle clean test
