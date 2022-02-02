@@ -30,6 +30,22 @@ container port is defined in `json-server.json` config file
 
 Env. var could be defined for the container to hold the relative path to json data source
 
+## docker-compose
+
+```shell
+docker-compose up -d
+```
+
+### Regression test
+
+```shell
+docker-compose start test
+```
+
+### json-server note
+
+Before running with `docker-compose` set the property `REST-JSON=http://json-server` in `src/main/resources/config.properties` file
+
 ## Scripts
 
 Scripts can be injected in a web page, there is `jquery.js` to inject jQuery in a web page
